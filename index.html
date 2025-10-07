@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Delivery System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="building">
+            <div class="floor" data-floor="5">5F</div>
+            <div class="floor" data-floor="4">4F</div>
+            <div class="floor" data-floor="3">3F</div>
+            <div class="floor" data-floor="2">2F</div>
+            <div class="floor" data-floor="1">1F</div>
+        </div>
+        <div class="elevator-shaft">
+            <div class="pod"></div>
+        </div>
+        <div class="conveyor-belt"></div>
+        <div class="watchman-hub">
+            <p>Watchman Hub</p>
+            <select id="floor-select">
+                <option value="1">1F</option>
+                <option value="2">2F</option>
+                <option value="3">3F</option>
+                <option value="4" selected>4F</option>
+                <option value="5">5F</option>
+            </select>
+            <button id="start-delivery-btn">Start Delivery</button>
+        </div>
+        <div class="notification" id="notification"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
